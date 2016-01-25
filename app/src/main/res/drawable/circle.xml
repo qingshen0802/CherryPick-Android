@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval" >
+
+    <stroke android:color="@color/infoBorder" android:width="1dp"  ></stroke>
+
+    <gradient android:startColor="@color/infoGradientStart" android:endColor="@color/infoGradientEnd"
+        android:angle="270"/>
+    </shape>
+
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >-->
+    <!--<gradient android:startColor="@color/cherry_red" android:endColor="#990000"-->
+        <!--android:angle="270"/>-->
+
+    <!--<corners-->
+        <!--android:radius="10dp" />-->
+<!--</shape>-->

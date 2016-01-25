@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">CherryPick</string>
+    <string name="buildVersion">v0.1</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_flip_card">Flip Card</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="button_send">Send</string>
+
+        <!-- Strings related to login -->
+        <string name="prompt_email">Email</string>
+        <string name="prompt_password">Password</string>
+        <string name="action_sign_in">Enter</string>
+        <string name="invalid_email">This email address is invalid</string>
+        <string name="invalid_password">Password is too short</string>
+        <string name="incorrect_password">Password is incorrect</string>
+        <string name="field_required">This field is required</string>
+
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#979797</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#f9f9f9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+
+
+    <!-- New -->
+    <string name="title_crossfade">Simple Crossfade</string>
+    <string name="title_card_flip">Card Flip</string>
+    <string name="title_screen_slide">Screen Slide</string>
+    <string name="title_zoom">Zoom</string>
+    <string name="title_layout_changes">Layout Changes</string>
+    <string name="title_template_step">Step <xliff:g id="step_number">%1$d</xliff:g>: Lorem
+        Ipsum</string>
+
+    <!-- Actions -->
+    <string name="action_toggle">Toggle indicator</string>
+    <string name="action_add_item">Add item</string>
+    <string name="action_remove_item">Remove item</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_info">Photo info</string>
+    <string name="action_photo">View photo</string>
+
+    <!-- Messages -->
+    <string name="message_empty_layout_changes">Add an item above to get started.</string>
+    <string name="message_zoom_touch_expand">Touch a photo to expand it.</string>
+
+
+
+    <string name="title_activity_intro">Introduction</string>
+    <string name="intro_description">Thanks for trying out Cherrypick!</string>
+    <string name="intro_proceed_btn">Ok</string>
+
+
+    <string name="title_activity_drag_cards">DragCards</string>
+    <string name="drag_description">Liked Cards to drag goes here</string>
+    <string name="logo_image_description">Cherrypick logo</string>
+
+    <string name="sort_cards">Sort Cards</string>
+
+    <string name="hello_world">Hello World</string>
+    <string name="description_image_1">description</string>
+    <string name="lorem_ipsum">Lorem</string>
+
+    <string name="card_details">Card Details</string>
+    
+    <string-array name="network">
+        <item>All Network</item>
+        <item>O2</item>
+        <item>Vodafone</item>
+        <item>EE</item>
+        <item>Three</item>
+    </string-array>
+    <string-array name="operating_system">
+        <item>All OS</item>
+        <item>Android</item>
+        <item>iOS</item>
+        <item>Windows</item>
+    </string-array>
+    <string-array name="minimum_memory">
+        <item>No Minimum</item>
+        <item>16GB</item>
+        <item>32GB</item>
+        <item>64GB</item>
+    </string-array>
+    <string-array name="minimum_data_allowance">
+        <item>No Minimum</item>
+        <item>1GB</item>
+        <item>2GB</item>
+        <item>5GB</item>
+        <item>10GB</item>
+    </string-array>
+    <string name="title_activity_intro_screen">IntroScreenActivity</string>
+</resources>

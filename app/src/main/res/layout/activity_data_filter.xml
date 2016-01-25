@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cherry_red">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:background="@android:color/white"
+        android:layout_marginTop="42dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="false"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Matching Offers:"
+                android:id="@+id/match_result"
+                android:textColor="@color/cherry_red"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Network"
+                android:id="@+id/textView"
+                android:textColor="@color/cherry_red"
+                android:layout_marginTop="16dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/network_spinner"
+                android:entries="@array/network"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Operating System"
+                android:id="@+id/textView2"
+                android:textColor="@color/cherry_red"
+                android:layout_marginTop="16dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/system_spinner"
+                android:entries="@array/operating_system"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Minimum Memory"
+                android:id="@+id/textView3"
+                android:textColor="@color/cherry_red"
+                android:layout_marginTop="16dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/memory_spinner"
+                android:entries="@array/minimum_memory"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Minimum Data Allowance"
+                android:id="@+id/textView4"
+                android:textColor="@color/cherry_red"
+                android:layout_marginTop="16dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data_allowance_spinner"
+                android:entries="@array/minimum_data_allowance"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Maximum Monthly Price(£)"
+                android:id="@+id/textView5"
+                android:textColor="@color/cherry_red"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_monthly_price"
+                android:inputType="number"
+                android:numeric="integer"
+                android:hint="Type 2 digit value"
+                android:background="@drawable/edittext_bottom_bg"
+                android:textColorHint="#ccaaaa"
+                android:maxLength="2"
+                android:padding="4dp"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Cancel"
+                    android:id="@+id/btn_cancel"
+                    android:textColor="@android:color/white"
+                    android:background="@color/cherry_red"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="12dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Save"
+                    android:id="@+id/btn_save"
+                    android:textColor="@android:color/white"
+                    android:background="@color/cherry_red"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Data Filter"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

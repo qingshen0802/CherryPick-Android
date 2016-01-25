@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:layout_margin="20dp"
+    >
+    <TextView
+
+        android:id="@+id/textContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="If you don&apos;t like it, swipe left"
+        android:textAlignment="center" />
+
+    <!--<Button-->
+        <!--android:id="@+id/submitButton"-->
+        <!--style="?android:textAppearanceSmall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text="@string/intro_proceed_btn"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#ffffffff"-->
+        <!--android:background="@color/cherry_red"-->
+        <!--android:onClick="sendProceed" />-->
+
+    <!--<TextView style="?android:textAppearanceSmall"-->
+        <!--android:id="@+id/continueIndicator"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text=">"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="50dp"-->
+        <!--android:textColor="@color/cherry_red"-->
+        <!--/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/swipe_left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/continueIndicator"
+        android:layout_below="@+id/textContent" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageView2"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginTop="33dp"-->
+        <!--android:src="@drawable/icons_03"-->
+        <!--android:layout_alignTop="@+id/imageView"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/introSwipeArrow"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/textContent"-->
+        <!--android:layout_above="@id/continueIndicator"-->
+        <!--android:maxHeight="50dp"-->
+        <!--android:layout_toLeftOf="@+id/imageView2"-->
+        <!--android:layout_toStartOf="@+id/imageView2" />-->
+
+</RelativeLayout>

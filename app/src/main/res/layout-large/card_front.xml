@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewFlipper2" >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_margin="5dp"
+
+            android:background="@drawable/card"
+            android:layout_height="fill_parent">
+
+
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_header"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@android:style/TextAppearance.Large.Inverse"
+                    android:textColor="#ffffff"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="84dp"
+                    android:text="Title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/title"
+
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="12dp">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="4"
+                        >
+
+                        <TextView
+                            android:id="@+id/deviceMemory"
+                            style="@android:style/TextAppearance.Large.Inverse"
+                            android:textColor="#ffffff"
+                            android:textSize="42sp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="32GB"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true" />
+                        <TextView
+                            android:id="@+id/deviceColour"
+                            style="@android:style/TextAppearance.Large.Inverse"
+                            android:textColor="#ffffff"
+                            android:textSize="42sp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Black"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true" />
+
+                    </RelativeLayout>
+
+                    <TableLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="3"
+                        android:stretchColumns="1"
+                        android:layout_marginLeft="20dp">
+                        <TableRow>
+                            <TextView
+                                android:textColor="#ffffff"
+                                android:textSize="24sp"
+                                android:gravity="bottom"
+                                android:text="Upfront:"
+                                />
+                            <TextView
+                                android:id="@+id/upfrontCost"
+                                android:textColor="#ffffff"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="right"
+                                android:text="£10.00"  />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:textColor="#ffffff"
+                                android:textSize="24sp"
+                                android:gravity="bottom"
+                                android:text="Monthly:"  />
+                            <TextView
+                                android:id="@+id/monthlyCost"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:layout_gravity="right"
+                                android:textSize="24sp"
+                                android:text="£10.00"
+                                />
+                        </TableRow>
+                        <!--<TableRow>-->
+
+                            <!--<TextView-->
+                                <!--android:textColor="#363636"-->
+                                <!--android:textSize="12sp"-->
+                                <!--android:text="Duration:"  />-->
+                            <!--<TextView-->
+                                <!--android:id= "@+id/contractLength"-->
+                                <!--android:textColor="#363636"-->
+                                <!--android:textStyle="bold"-->
+                                <!--android:layout_gravity="right"-->
+                                <!--android:textSize="13sp"-->
+                                <!--android:text="24 months" />-->
+                        <!--</TableRow>-->
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="top"
+                    android:id="@+id/image"
+                    android:layout_toLeftOf="@+id/dataContainer"
+                    android:layout_toRightOf="@+id/valueContainer"
+                    android:src="@drawable/apple_iphone6_plus"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/dataContainer"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="24dp">
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/circle"
+                        android:id="@+id/dataAllowance"
+                        android:layout_centerHorizontal="true">
+                        <TextView
+                            android:layout_alignParentTop="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Data"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="#363636"
+                            android:id="@+id/dataAllowanceLabel"
+                            android:layout_marginTop="8dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/dataAllowanceValue"
+                            android:textSize="32sp"
+                            android:lineSpacingExtra="0dp"
+                            android:foregroundGravity="top"
+                            android:textStyle="bold"
+                            android:textColor="#363636"
+                            android:text="3GB"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/dataAllowanceLabel" />
+                        <TextView
+                            android:layout_below="@id/dataAllowanceLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/dataAllowanceUnlimited"
+                            android:foregroundGravity="top"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="-10dp"
+                            android:textStyle="bold"
+                            android:textSize="64sp"
+                            android:textColor="#363636"
+                            android:visibility="gone"
+                            android:text="∞"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/circle"
+                        android:id="@+id/talktimeAllowance"
+                        android:layout_below="@+id/dataAllowance"
+
+                        android:layout_centerHorizontal="true">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mins"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="#363636"
+                            android:id="@+id/talktimeAllowanceLabel"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="8dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/talktimeAllowanceLabelValue"
+                            android:foregroundGravity="top"
+                            android:textStyle="bold"
+                            android:textSize="32sp"
+                            android:textColor="#363636"
+                            android:text="600"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/talktimeAllowanceLabel" />
+                        <TextView
+                            android:layout_below="@id/talktimeAllowanceLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/talktimeAllowanceUnlimited"
+                            android:foregroundGravity="top"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="-10dp"
+                            android:textStyle="bold"
+                            android:textSize="64sp"
+                            android:textColor="#363636"
+                            android:visibility="gone"
+                            android:text="∞"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/circle"
+
+                        android:id="@+id/smsAllowances"
+                        android:layout_below="@+id/talktimeAllowance"
+                        android:layout_centerHorizontal="true">
+                        <TextView
+                            android:layout_alignParentTop="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SMS"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:textColor="#363636"
+                            android:id="@+id/smsAllowanceLabel"
+                            android:layout_marginTop="8dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/smsAllowanceValue"
+                            android:textStyle="bold"
+                            android:textSize="32sp"
+                            android:lineSpacingExtra="0dp"
+                            android:textColor="#363636"
+                            android:text="600"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/smsAllowanceLabel" />
+                        <TextView
+                            android:layout_below="@id/smsAllowanceLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/smsAllowanceUnlimited"
+                            android:foregroundGravity="top"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="-10dp"
+                            android:textStyle="bold"
+                            android:textSize="64sp"
+                            android:textColor="#363636"
+                            android:visibility="gone"
+                            android:text="∞"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/circle"
+
+                        android:id="@+id/contactDuration"
+                        android:layout_below="@+id/smsAllowances"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:layout_alignParentTop="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Contract"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:textColor="#363636"
+                            android:id="@+id/contractLabel"
+                            android:layout_marginTop="16dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/contactDurationValue"
+                            android:textStyle="bold"
+                            android:textSize="32sp"
+                            android:lineSpacingExtra="0dp"
+                            android:textColor="#363636"
+                            android:text="24M"
+                            android:layout_below="@+id/contractLabel"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/valueContainer"
+                    android:layout_marginTop="24dp"
+                    android:layout_alignParentTop="true">
+
+                    <RelativeLayout
+                        android:layout_width="112dp"
+                        android:layout_height="72dp"
+                        android:background="@drawable/rounded_rectangle"
+                        android:id="@+id/cameraSpec"
+                        android:padding="5dp"
+                        android:layout_centerHorizontal="true">
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icon_camera"
+                            android:id="@+id/cameraSpecLabel" />
+                        <TextView
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/cameraSpecValue"
+                            android:textSize="20sp"
+                            android:textColor="#363636"
+                            android:text="24MP"
+                            tools:text="24MP"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="112dp"
+                        android:layout_height="72dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/rounded_rectangle"
+                        android:layout_below="@+id/cameraSpec"
+                        android:id="@+id/batterySpec"
+                        android:padding="5dp"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icon_battery"
+                            android:id="@+id/batterySpecLabel" />
+                        <TextView
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/batterySpecValue"
+                            android:textSize="20sp"
+                            android:textColor="#363636"
+                            android:text="5 Hours"
+                            tools:text="5 Hours"
+                            />
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_below="@id/batterySpec"
+                        tools:src="@drawable/operating_system_ios"
+                        android:layout_marginTop="24dp"
+                        android:layout_width="72dp"
+                        tools:width="60dp"
+                        android:layout_height="72dp"
+                        android:id="@+id/deviceOSImage"
+                        android:layout_centerHorizontal="true" />
+
+                    <ImageView
+                        android:layout_below="@id/deviceOSImage"
+                        android:layout_marginTop="24dp"
+                        android:layout_width="72dp"
+                        android:id="@+id/dataNetworkType"
+                        tools:width="60dp"
+                        android:layout_height="72dp"
+                        android:src="@drawable/icon_4g"
+                        android:layout_centerHorizontal="true" />
+
+                    <ImageView
+                        android:layout_below="@id/dataNetworkType"
+                        android:layout_marginTop="24dp"
+                        android:layout_width="72dp"
+                        tools:width="55dp"
+                        android:foregroundGravity="center"
+                        android:layout_height="72dp"
+                        android:src="@drawable/sd_logo"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:id="@+id/networkLogo"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/networks_o2"
+                    android:layout_alignParentTop="true" />
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/networkLogo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/rounded_rectangle">
+
+                    <ImageView
+                        android:layout_width="84dp"
+                        android:layout_height="64dp"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/icon_no_stalk_medium"
+                        android:id="@+id/cherryLogo"
+                        />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@+id/cherryLogo"
+                        android:layout_margin="5dp"
+                        android:text="This phone is one of our favs because it allows us to phone people."
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+
+</RelativeLayout>

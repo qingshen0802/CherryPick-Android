@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:textAppearanceSmall"
+            android:text="&lt;"
+            android:id="@+id/btn_previous"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="@color/cherry_red"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:textAppearanceSmall"
+            android:text=">"
+            android:id="@+id/btn_next"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="@color/cherry_red"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textStyle="bold"
+            android:id="@+id/btn_intro_ok"
+            android:layout_alignParentRight="true"
+            android:background="@color/cherry_red"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button_container"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp" />
+
+
+</RelativeLayout>

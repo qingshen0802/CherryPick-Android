@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/action_reset_selection"
+        android:title="Reset Selection"
+        app:showAsAction="never"
+        android:orderInCategory="90"/>
+    <item android:id="@+id/action_export_my_data"
+        android:title="Export My Data"
+        android:orderInCategory="91"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_data_filter"
+        android:title="Data Filter"
+        android:orderInCategory="92"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_logout"
+        android:title="Log out"
+        app:showAsAction="never"
+        android:orderInCategory="93"/>
+
+</menu>

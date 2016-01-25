@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:layout_margin="20dp"
+    >
+    <TextView
+
+        android:id="@+id/textContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="11pt"
+        android:text="Thanks for trying our Cherrypick. We&apos;re going to show you some cards, so that you can help us learn what you like"
+        android:textAlignment="center" />
+
+    <!--<Button-->
+        <!--android:id="@+id/submitButton"-->
+        <!--style="?android:textAppearanceSmall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text="@string/intro_proceed_btn"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#ffffffff"-->
+        <!--android:background="@color/cherry_red"-->
+        <!--android:onClick="sendProceed" />-->
+
+    <!--<TextView style="?android:textAppearanceSmall"-->
+        <!--android:id="@+id/continueIndicator"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text=">"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="50dp"-->
+        <!--android:textColor="@color/cherry_red"-->
+        <!--/>-->
+</RelativeLayout>
